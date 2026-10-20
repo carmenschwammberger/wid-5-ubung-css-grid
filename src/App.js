@@ -3,7 +3,7 @@ import "./style.css";
 export default function App() {
   return (
     <div className="app">
-      <header>Header</header>
+      <header>Headers</header>
       <aside>Sidebar</aside>
 
       <main>Main</main>
