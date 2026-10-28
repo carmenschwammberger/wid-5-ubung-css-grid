@@ -7,13 +7,13 @@ body {
 .app {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto 1fr auto;
-}
+  grid-template-columns: 200px 1fr; /*Layout hat zwei Spalten (Sidebar und Main) -> es wird festgelegt, wie breit die Spalten sind, 1. Spalte 200px, 2. Spalte 1fr (fr=free space-> ganzer restlicher verfügbarer Raum)*/
+  grid-template-rows: auto 1fr auto; /*Layout hat drei Zeilen (Header, Main und Footer) -> auto=automatisch an den Inhalt anpassend*/
+} /*Prozentuales Verhältnis mit fr definieren: 1fr 2 fr (= 1/3 für das erste Element und 2/3 für das zweite Element)*/
 
 header {
   background: lightblue;
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /*Zeigt, welche Spalten das Eelement einnimmt -> 1 / -1 = das Element nimmt die gesamte Breite ein (von ersten bis letzter Spalte)*/
 }
 footer {
   background: lightblue;
